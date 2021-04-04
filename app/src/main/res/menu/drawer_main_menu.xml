@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:title="@string/chapters"
+            android:id="@+id/id_chapters"
+            android:icon="@drawable/ic_chapters"/>
+
+        <item android:title="@string/bookmarks"
+            android:id="@+id/id_bookmarks"
+            android:icon="@drawable/ic_bookmarks"/>
+
+        <item android:title="@string/about"
+            android:id="@+id/id_about"
+            android:icon="@drawable/ic_about"/>
+    </group>
+
+</menu>

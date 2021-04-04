@@ -1,0 +1,5 @@
+<resources>
+    <string name="chapters">Главы</string>
+    <string name="bookmarks">Избранное</string>
+    <string name="about">О приложении</string>
+</resources>

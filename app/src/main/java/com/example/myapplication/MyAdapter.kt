@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,12 @@ class MyAdapter(listArray: ArrayList<ListItem>, context: Context) : RecyclerView
             tvContent.text = listItem.contentText
             itemView.setOnClickListener() {
                 Toast.makeText(context, "Pressed: ${tvTitle.text}", Toast.LENGTH_SHORT).show()
+
+                val i = Intent(context, ContentActivity::class.java).apply {
+                    putExtra("title", tvTitle.text.toString())
+                    putExtra("content", tvContent.text.toString())
+                }
+                context.startActivity(i)
             }
         }
     }
